@@ -15,7 +15,7 @@ from pathlib import Path
 
 # Application URL halves
 url = "https://lukeoboyle-8000.theiadockernext-"
-url2 = "0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
+url2 = "1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
 
 # Attribute Similarity Validator
 asvFirstHalf = 'django.contrib.auth.password_validation.'
