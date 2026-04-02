@@ -13,8 +13,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
+# Application URL halves
 url = "https://lukeoboyle-8000.theiadockernext-"
-url2= "0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
+url2 = "0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
+
+# Attribute Similarity Validator
+asvFirstHalf = 'django.contrib.auth.password_validation.'
+asvSecondHalf = 'UserAttributeSimilarityValidator'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -95,8 +100,7 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME':
-        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': asvFirstHalf + asvSecondHalf
     },
     {
         'NAME':
