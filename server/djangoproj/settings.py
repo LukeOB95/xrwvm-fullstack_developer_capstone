@@ -13,9 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-url = ("https://lukeoboyle-8000.theiadockernext-0-labs-prod-"
-        "theiak8s-4-tor01.proxy.cognitiveclass.ai"
-)
+url = "https://lukeoboyle-8000.theiadockernext-"
+url2= "0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,9 +31,9 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost', url]
-    
-CSRF_TRUSTED_ORIGINS = [url]
+    'localhost', url + url2]
+
+CSRF_TRUSTED_ORIGINS = [url + url2]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
