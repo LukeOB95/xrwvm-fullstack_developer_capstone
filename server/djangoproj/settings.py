@@ -19,6 +19,9 @@ allowedHostURLPart2 = '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 asvLinkPart1 = 'django.contrib.auth.password_validation.'
 asvLinkPart2 = 'UserAttributeSimilarityValidator'
 
+tolPart1 = 'https://lukeoboyle-8000.theiadockernext-1-labs'
+tolPart2 = '-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,8 +38,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost', allowedHostURLPart1 + allowedHostURLPart2]
+
 CSRF_TRUSTED_ORIGINS = [
-    'https://lukeoboyle-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+    tolPart1 + tolPart2]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
