@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 allowedHostURLPart1 = 'https://lukeoboyle-8000.theiadockernext-1'
-allowedHostURLPart2 = '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai
+allowedHostURLPart2 = '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 
 asvLinkPart1 = 'django.contrib.auth.password_validation.'
 asvLinkPart2 = 'UserAttributeSimilarityValidator'
