@@ -103,7 +103,7 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        , asvLinkPart1 + asvLinkPart2
+        asvLinkPart1 + asvLinkPart2
     },
     {
         'NAME':
