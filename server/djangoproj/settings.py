@@ -13,13 +13,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 
-allowedHostURLPart1 = 'https://lukeoboyle-8000.theiadockernext-1'
+allowedHostURLPart1 = 'https://lukeoboyle-8000.theiadockernext-0'
 allowedHostURLPart2 = '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 
 asvLinkPart1 = 'django.contrib.auth.password_validation.'
 asvLinkPart2 = 'UserAttributeSimilarityValidator'
 
-tolPart1 = 'https://lukeoboyle-8000.theiadockernext-1-labs'
+tolPart1 = 'https://lukeoboyle-8000.theiadockernext-0-labs'
 tolPart2 = '-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
